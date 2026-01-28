@@ -22,15 +22,26 @@ Nosso quadro de tarefas é centralizado no **GitHub Projects da Organização**.
 
 ## 💻 Fluxo de Desenvolvimento (Git & PRs)
 
+### 0. Clonando e Preparando a Branch
+Antes de iniciar qualquer codificação, você precisa ter o repositório localmente e garantir que está trabalhando na versão mais recente.
+
+```bash
+git clone https://github.com/Codeye-Corporation/nome-do-repositorio.git
+```
+
 ### 1. Preparando a Branch
 Nunca trabalhe diretamente na branch `main`. Toda alteração deve vir de uma branch secundária.
 
-# Sincronize seu ambiente local
+#### Sincronize seu ambiente local
+```bash
 git checkout main
 git pull origin main
+```
 
-# Crie sua branch (padrão: tipo/id-da-issue)
+#### Crie sua branch (padrão: tipo/id-da-issue)
+```bash
 git checkout -b feature/12-setup-login
+```
 
 ### 2. Abrindo o Pull Request (PR)
 
